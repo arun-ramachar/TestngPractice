@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [DemoSuite]" guice-stage="DEVELOPMENT">
+  <parameter name="password" value="admin123"/>
+  <parameter name="url" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"/>
+  <parameter name="username" value="Admin"/>
+  <test thread-count="5" name="OrangeInfo(failed)">
+    <classes>
+      <class name="com.testing.OrangeHRM">
+        <methods>
+          <include name="teardown"/>
+          <include name="enterLoginDetails" invocation-numbers="0"/>
+          <include name="intialiseBrowser"/>
+        </methods>
+      </class> <!-- com.testing.OrangeHRM -->
+    </classes>
+  </test> <!-- OrangeInfo(failed) -->
+</suite> <!-- Failed suite [DemoSuite] -->
